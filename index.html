@@ -1,11 +1,142 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
+<article>
+  <header>
+  <h1>Natural speech re-synthesis from direct cortical recordings utilizing pre-trained acoustic and linguistic speech generators </h1>
+  </header>
+</article>
+
+
+<div><b>Abstract:</b> Reconstructing perceived speech stimuli from neural recordings is not only advancing the understanding of the neural coding underlying speech processing but also an important building block for brain-computer interfaces and neuroprosthetics. However, prior methods predominantly focused on acoustic reconstruction while neglecting linguistic intelligibility, fundamentally limiting clinical utility. In order to overcome this limitation, we proposed a dual-path encoder-decoder framework that concurrently decodes acoustic and linguistic representations. In this work, we proposed a dual-path pre-trained encoder-decoder framework to address these problems. We recorded high-density electrocorticography (ECoG) signals when participants listening to natural speech. Our architecture integrates: an acoustic pathway consists of an LSTM adaptor and a HiFi-GAN generator to decode spectral features, and a linguistic pathway consists of a transformer adaptor and a text-to-speech (TTS) generator to decode word tokens and finally merge them by timbre cloning for speaker identity preservation. Using only 20 minutes of ECoG data from a single participant, we achieve significant intelligibility of the neural-driven re-synthesized natural speech (MOS = 3.956 ± 0.173, word error rate = 17.7% ± 3.2%). This demonstrates that integrating acoustic and linguistic adaptors with timbre cloning after neural feature alignment enables efficient decoding of naturally intelligible speech—paving the way for clinically viable neuroprosthetics.
+</div>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Template</title>
+<meta charset="UTF-8">
+<title>Speech Demo</title>
+<style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: center;
+            vertical-align: top;
+        }
+        .audio-container {
+            margin-bottom: 15px;
+        }
+        .audio-label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Hello</h1>
-</body>
+  
+
+<!--<h3>1. Mandarin demos 4  2 </h3></a>-->
+
+<i>For this part, we demonstrate some natural and reconstructed speech.</i>
+
+   <p class="sample">
+
+    <blockquote>
+    <table border="1" cellspacing="0" cellpadding="5">
+    <tr>
+        <th>Sample 1</th>
+        <th>Sample 2</th>
+        <th>Sample 3</th>
+    </tr>
+    <tr>
+        <td valign="top">
+            <div>Ground Truth</div>
+            <audio src="./ground_truth/0.wav" controls></audio>
+            
+            <div>Final Results</div>
+            <audio src="./final_results/0.wav" controls></audio>
+            
+            <!-- <div>SAE</div>
+            <audio src="./sae/0_gt.wav" controls></audio>
+            
+            <div>SAE Denoised</div>
+            <audio src="./sae_denoised/0.wav" controls></audio> -->
+            
+            <div>Baseline 1</div>
+            <audio src="./baseline1/0_rec.wav" controls></audio>
+            
+            <div>Baseline 2</div>
+            <audio src="./baseline2/0_rec.wav" controls></audio>
+            
+            <div>Baseline 3</div>
+            <audio src="./baseline3/0_rec.wav" controls></audio>
+            
+            <div>Baseline 4</div>
+            <audio src="./baseline4/0_rec.wav" controls></audio>
+        </td>
+        
+        <td valign="top">
+            <div>Ground Truth</div>
+            <audio src="./ground_truth/13.wav" controls></audio>
+            
+            <div>Final Results</div>
+            <audio src="./final_results/13.wav" controls></audio>
+            
+            <!-- <div>SAE</div>
+            <audio src="./sae/13_gt.wav" controls></audio>
+            
+            <div>SAE Denoised</div>
+            <audio src="./sae_denoised/13.wav" controls></audio> -->
+            
+            <div>Baseline 1</div>
+            <audio src="./baseline1/13_rec.wav" controls></audio>
+            
+            <div>Baseline 2</div>
+            <audio src="./baseline2/13_rec.wav" controls></audio>
+            
+            <div>Baseline 3</div>
+            <audio src="./baseline3/13_rec.wav" controls></audio>
+            
+            <div>Baseline 4</div>
+            <audio src="./baseline4/13_rec.wav" controls></audio>
+        </td>
+        
+        <td valign="top">
+            <div>Ground Truth</div>
+            <audio src="./ground_truth/14.wav" controls></audio>
+            
+            <div>Final Results</div>
+            <audio src="./final_results/14.wav" controls></audio>
+            
+            <!-- <div>SAE</div>
+            <audio src="./sae/14_gt.wav" controls></audio>
+            
+            <div>SAE Denoised</div>
+            <audio src="./sae_denoised/14.wav" controls></audio> -->
+            
+            <div>Baseline 1</div>
+            <audio src="./baseline1/14_rec.wav" controls></audio>
+            
+            <div>Baseline 2</div>
+            <audio src="./baseline2/14_rec.wav" controls></audio>
+            
+            <div>Baseline 3</div>
+            <audio src="./baseline3/14_rec.wav" controls></audio>
+            
+            <div>Baseline 4</div>
+            <audio src="./baseline4/14_rec.wav" controls></audio>
+        </td>
+    </tr>
+</table>
+    </blockquote>   
+
+
+
+  </p>    
+  
+ </body>
 </html>
