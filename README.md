@@ -7,6 +7,13 @@ Reconstructing speech from neural recordings is crucial for understanding speech
 
 The demo page is available [here](https://cctn-bci.github.io/Neural2Speech2/).
 
+## Demo Page of Speech Waveforms
+
+The demo page is available [here](https://cctn-bci.github.io/Neural2Speech2/).
+
 ## Demo Video for Introducing Our Work
 
-The demo video is available [here](./video/demovideo.mp4).
+<video controls width="100%">
+    <source src="./video/demovideo.mp4" type="video/mp4">
+</video>
+
