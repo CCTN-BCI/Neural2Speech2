@@ -1,5 +1,6 @@
 # High-Fidelity Neural Speech Reconstruction through an Efficient Acoustic-Linguistic Dual-Pathway Framework
 
+
 ## Demo running
 If you need to one-key running (especially the linguistic pathway that generate speech from word token features), a demo link with actural neural data is available [here](https://www.dropbox.com/scl/fi/54a3tlykmge4ap78cd72g/Neural2speech2_linguistic_pathway_demo.zip?rlkey=g0xmean3pvs2dnutetolw3wt8&st=twyjnbnu&dl=0)
 
@@ -13,3 +14,6 @@ The demo page is available [here](https://cctn-bci.github.io/Neural2Speech2/).
 ## Demo Video for Introducing Our Work
 
 The demo video is available [here](./video/demovideo.mp4).
+
+## Citation
+Li, J., Guo, C., Zhang, C., Chang, E. F., & Li, Y. (2025). High-Fidelity Neural Speech Reconstruction through an Efficient Acoustic-Linguistic Dual-Pathway Framework. eLife, 14. https://doi.org/10.7554/eLife.109400
